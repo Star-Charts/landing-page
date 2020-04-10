@@ -23,20 +23,16 @@ const HeaderStyles = styled.div `
     font-weight: 500;
     display: inline-block;
     background: transparent;
-    padding: .3rem 0;
+    padding: .2rem 0 .3rem 0;
     width: 6rem;
     border: 2px solid #222050; /*Darker purple*/
     border-radius: 0 0.25rem 0.25rem 0;
     transition: background-color .2s;
-
+    
     :hover {
       background-color: #222050; /*Darker purple*/
     }
-
   }
-
-
-
 `;
 
 function Header() {
