@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import bg from './bgDecoration-01.svg';
+import bg from './bgDecoration.svg';
 import Header from './components/Header';
 
 function App() {
