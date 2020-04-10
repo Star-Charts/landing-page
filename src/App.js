@@ -1,15 +1,29 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import bg from './bgDecoration.svg';
+import bgdeco from './bgDecoration.svg';
 import Header from './components/Header';
+import styled from 'styled-components';
+
+const AppStyles = styled.div `
+  width: 100%;
+  background-color: rgb(8, 8, 37);
+  background-image: url(${bgdeco});
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 170%;
+  background-size: 55% 200%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+`;
 
 function App() {
   return (
-    <div>
+    <AppStyles>
       <Route path='/' component={Header} />
-      <img scr={bg} alt='logo' />
 
-    </div>
+    </AppStyles>
   );
 }
 
