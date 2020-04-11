@@ -1,7 +1,8 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+// import { Route } from 'react-router-dom';
 import bgdeco from './bgDecoration.svg';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import styled from 'styled-components';
 
 const AppStyles = styled.div `
@@ -15,14 +16,24 @@ const AppStyles = styled.div `
   position: absolute;
   top: 0;
   bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .content {
+    border: 2px solid red;
+
+  }
 
 `;
 
 function App() {
   return (
     <AppStyles>
-      <Route path='/' component={Header} />
+      <Header />
+      <section className='content'>
 
+      </section>
+      <Footer />
     </AppStyles>
   );
 }
