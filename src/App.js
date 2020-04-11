@@ -2,6 +2,7 @@ import React from 'react';
 // import { Route } from 'react-router-dom';
 import bgdeco from './bgDecoration.svg';
 import Header from './components/Header';
+import Banner from './components/Banner';
 import Footer from './components/Footer';
 import styled from 'styled-components';
 
@@ -30,8 +31,9 @@ function App() {
   return (
     <AppStyles>
       <Header />
+        <Banner />
       <section className='content'>
-
+hi
       </section>
       <Footer />
     </AppStyles>

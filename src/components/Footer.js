@@ -34,7 +34,6 @@ function Footer() {
       <div className='fooImg'>
         <p>Copyright 2020 Star-Chart</p>
       </div>
-      
     </FooterStyles>
   );
 }
