@@ -6,19 +6,27 @@ const FooterStyles = styled.div `
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  /* align-content: center; */
   color: #4E3F99;
+  border: 1px solid red;
+  
 
+  
   .fooImg {
     text-align: center;
-    width: 100%;
-    height: 25rem;
+    /* width: 100%; */
+    height: 22rem;
     background-image: url(${footerImg});
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: repeat-x;
+    /* background-attachment: fixed; */
     background-position: center bottom;
-    background-size: auto;
-
+    background-size: contain;
+    border: 1px solid red;
+    
     p {
+      text-align: center;
+      position: fixed;
+      bottom: 1rem;
       position: fixed;
       bottom: 1rem;
       left: 0;
@@ -26,14 +34,16 @@ const FooterStyles = styled.div `
     }
   }
 
+
 `;
 
 function Footer() {
   return (
     <FooterStyles>
-      <div className='fooImg'>
+      <div className='fooImg' >
         <p>Copyright 2020 Star-Chart</p>
       </div>
+        {/* <img src={footerImg} alt='SpaceBG' /> */}
     </FooterStyles>
   );
 }
